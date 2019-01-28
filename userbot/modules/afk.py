@@ -13,9 +13,11 @@ async def mention_afk(e):
         if ISAFK:
             if e.sender_id not in USERS:
                 await e.reply(
-                    "Sorry! My boss is AFK due to ```"
-                    + AFKREASON
-                    + "```. Would ping him to look into the message soon😉"
+                    "Sorry! My boss is AFK currently."
+                    + "I would ping him to look into the message soon😎"
+                    + "\n\nReason: ```"
+                    + AFKREASON 
+                    + "```"
                 )
                 USERS.update({e.sender_id: 1})
                 COUNT_MSG = COUNT_MSG + 1
