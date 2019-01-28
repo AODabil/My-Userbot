@@ -140,6 +140,12 @@ If you can't have a config.env file, or you missed to type something on `config.
 
 `python3 -m userbot`
 
+# Special mention to :
+
+* [nitamarcel](https://github.com/nitanmarcel)
+
+Without him this idea of Termux set up would have never come into existence. 
+
 
 #### Running on Heroku:
 1. **Make sure to generate a session file, by running app.py on your local pc before deploying it on Heroku.**
