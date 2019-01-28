@@ -108,6 +108,39 @@ An example `config.env` file could be:
 If you can't have a config.env file, or you missed to type something on `config.env` but then pushed it up, it is also possible to use environment variables.
 
 
+### Setting up the bot using Termux:
+
+- Installation of these is a must:
+
+`pkg install clang python-dev postgresql-dev libcrypt-dev libffi-dev openssl-dev libxml2-dev libxslt-dev libjpeg-turbo-dev ndk-sysroot make`
+
+`pip3 install python-dotenv` 
+
+- Installation of git:
+
+`pkg install git`
+
+- Installation of Heroku-CLI [Google it if you face problems]
+
+`npm i -g heroku`
+
+- Cloning the repo:
+
+`git clone https://github.com/baalajimaestro/Telegram-UserBot.git`
+
+- Move to the directory:
+
+`cd Telegram-UserBot`
+
+- Install required files:
+
+`pip3 install -r requirements.txt`
+
+- Start it up:
+
+`python3 -m userbot`
+
+
 #### Running on Heroku:
 1. **Make sure to generate a session file, by running app.py on your local pc before deploying it on Heroku.**
 - Make sure you followed the instruction to setup the config file/ENV variables.
