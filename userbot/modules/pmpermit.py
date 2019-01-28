@@ -19,12 +19,12 @@ async def permitpm(e):
             except:
                 return
             E = is_approved(e.chat_id)
-            if not E and e.text != "`Bleep Blop! This is a Bot. Don't fret. \n\nMy Master hasn't approved you to PM. \
-Please wait for my Master to look in, he would mostly approve PMs.\n\n\
+            if not E and e.text != "`Bleep Blop! This is a Bot. Don't fret. \n\nMaSkEd JaCk hasn't approved your PM. \
+Please wait for JaCk to look in, he would mostly approve PMs.\n\n\
 As far as i know, he doesn't usually approve Retards.`" :
                 await e.reply(
-                    "`Bleep Blop! This is a Bot. Don't fret. \n\nMy Master hasn't approved you to PM. \
-Please wait for my Master to look in, he would mostly approve PMs.\n\n\
+                    "`Bleep Blop! This is a Bot. Don't fret. \n\nMaSkEd JaCk hasn't approved you to PM. \
+Please wait for JaCk to look in, he would mostly approve PMs.\n\n\
 As far as i know, he doesn't usually approve Retards.`"
                 )
                 if NOTIF_OFF:
@@ -35,7 +35,7 @@ As far as i know, he doesn't usually approve Retards.`"
                     COUNT_PM[e.chat_id] = COUNT_PM[e.chat_id] + 1
                 if COUNT_PM[e.chat_id] > 4:
                     await e.respond(
-                        "`You were spamming my Master's PM, which I don't like. I'mma Report Spam.`"
+                        "`You were spamming JaCk'S PM, which I don't like. I'mma Report Spam.`"
                     )
                     del COUNT_PM[e.chat_id]
                     await bot(BlockRequest(e.chat_id))
@@ -79,7 +79,7 @@ async def approvepm(e):
             await e.edit("`Running on Non-SQL mode!`")
             return
         approve(e.chat_id)
-        await e.edit("`Approved to PM!`")
+        await e.edit("`I have approved you to PM!`")
         if LOGGER:
             aname = await bot.get_entity(e.chat_id)
             name0 = str(aname.first_name)
