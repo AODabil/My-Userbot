@@ -14,7 +14,7 @@ async def mention_afk(e):
             if e.sender_id not in USERS:
                 await e.reply(
                     "Sorry! My boss is AFK currently."
-                    + "I would ping him to look into the message soon😎"
+                    + "\nI would ping him to look into the message soon😎"
                     + "\n\nReason: ```"
                     + AFKREASON 
                     + "```"
